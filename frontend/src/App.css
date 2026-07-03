@@ -1,0 +1,108 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.app-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.app-header h1 {
+  font-size: 48px;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+  font-size: 16px;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.error-message {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-retry {
+  background-color: white;
+  color: #ff6b6b;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.btn-retry:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.loading {
+  text-align: center;
+  color: white;
+  padding: 40px;
+  font-size: 18px;
+}
+
+.empty-state {
+  background-color: white;
+  padding: 60px 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+}
+
+.todos-list {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 20px 10px;
+  }
+
+  .app-header h1 {
+    font-size: 32px;
+  }
+
+  .todo-form {
+    flex-direction: column;
+  }
+
+  .form-input {
+    min-width: auto;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
